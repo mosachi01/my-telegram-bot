@@ -21,8 +21,8 @@ from aiogram.utils.keyboard import InlineKeyboardBuilder
 from aiogram.fsm.context import FSMContext
 from aiogram.fsm.state import State, StatesGroup
 
-# ===== إعدادات متقدمة للبوت =====
-BOT_TOKEN = "8490442667:AAHW7sbCPbiCnXFGu-vVfL9mg7c5LoeyNq0"
+import os
+BOT_TOKEN = os.getenv("BOT_TOKEN")
 WEBSITE_URL = "https://mosachi01.github.io/my-science-hub/"
 LOGO_URL = "https://i.imgur.com/5X4XZqE.png"
 
@@ -1153,3 +1153,4 @@ if __name__ == "__main__":
     # تشغيل البوت
 
     asyncio.run(main())
+
