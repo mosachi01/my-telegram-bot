@@ -1151,4 +1151,5 @@ async def main():
 
 if __name__ == "__main__":
     # تشغيل البوت
+
     asyncio.run(main())
